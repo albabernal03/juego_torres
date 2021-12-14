@@ -13,7 +13,11 @@ import sys
 #
 def verticalRooks(r1, r2):
     for torre_1, torre_2 in zip(r1,r2): #usamos el zip para mapear los índices en más de una variable
-        distancia = abs(torre_2 - torre_1)
+        distancia = abs(torre_2 - torre_1) #El juego se reduce a las distancias, es decir dependiendo de la distancia habrá un ganador u otro. Asimismo es muy importante recalcar que también depende de que empiece.
+        ganador = ""
+        if distancia == 1:
+            
+
 
  if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
