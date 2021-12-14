@@ -31,9 +31,10 @@ def verticalRooks(r1, r2):
                 ganador = 'Jugador 1'
                 comienza = 2
 
-
-
-
+    if ganador == 1:
+        return('ha ganado el jugador 1!')
+    else:
+        return ('ha ganado el jugador 2!')
 
 
  if __name__ == '__main__':
