@@ -17,6 +17,8 @@ def verticalRooks(r1, r2):
         ganador = ""
         if distancia == 1: # La distancia mínima es 0 puesto que en las reglas se establece que r1 != r2
             ganador = "Jugador 1"
+        else:
+            ganador = "Jugador 2"
         
 
 
