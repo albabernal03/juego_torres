@@ -12,7 +12,8 @@ import sys
 # 2. INTEGER_ARRAY r2
 #
 def verticalRooks(r1, r2):
- # Write your code here
+    for torre_1, torre_2 in zip(r1,r2): #usamos el zip para mapear los índices en más de una variable
+        distancia = abs(torre_2 - torre_1)
 
  if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
