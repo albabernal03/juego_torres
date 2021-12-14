@@ -12,6 +12,7 @@ import sys
 # 2. INTEGER_ARRAY r2
 #
 def verticalRooks(r1, r2):
+    comienza = 2 #El juego nos lo indica
     for torre_1, torre_2 in zip(r1,r2): #usamos el zip para mapear los índices en más de una variable
         distancia = abs(torre_2 - torre_1) #El juego se reduce a las distancias, es decir dependiendo de la distancia habrá un ganador u otro. Asimismo es muy importante recalcar que también depende de que empiece.
         ganador = ""
