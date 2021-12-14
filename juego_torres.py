@@ -21,12 +21,12 @@ def verticalRooks(r1, r2):
         n = int(input().strip())
         r1 = []
         for _ in range(n):
-            r1_item = int(input().strip())
-            r1.append(r1_item)
+            posicion_torre_1 = int(input().strip())
+            r1.append(posicion_torre_1)
         r2 = []
         for _ in range(n):
-            r2_item = int(input().strip())
-            r2.append(r2_item)
+            posicion_torre_2 = int(input().strip())
+            r2.append(posicion_torre_2)
         result = verticalRooks(r1, r2)
         fptr.write(result + '\n')
 
