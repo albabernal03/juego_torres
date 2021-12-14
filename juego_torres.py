@@ -19,8 +19,19 @@ def verticalRooks(r1, r2):
         if comienza == 2:
             if distancia == 1:
                 ganador = 'Jugagor 1'
+                comienza = 2
             else:
                 ganador = 'Judador 2'
+                comienza = 1
+        else:
+            if distancia == 1:
+                ganador = 'Jugador 2'
+                comienza = 1
+            else:
+                ganador = 'Jugador 1'
+                comienza = 2
+
+
 
 
 
