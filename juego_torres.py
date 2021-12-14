@@ -11,6 +11,9 @@ import sys
 # 1. INTEGER_ARRAY r1
 # 2. INTEGER_ARRAY r2
 #
+
+
+    
 def verticalRooks(r1, r2):
     comienza = 2 #El juego nos lo indica
     for torre_1, torre_2 in zip(r1,r2): #usamos el zip para mapear los índices en más de una variable
@@ -52,3 +55,11 @@ if __name__ == '__main__':
             r2.append(posicion_torre_2)
         result = verticalRooks(r1, r2)
         print.write(result + '\n')
+
+
+while True:
+    print(':MENÚ:.')
+    print('En primer lugar debera introducir el número de tableros, es decir el numero de partidas que desea jugar')
+    print('En segundo lugar indica la dimensión del tablero, recuerde que ')
+    print('En tercer lugar indique las posición de la primera torre')
+    print('Por último indique las posiciones de la segunda torre')
